@@ -28,7 +28,7 @@ defscrollback 10000
 
 hardstatus alwayslastline
 # Very nice tabbed colored hardstatus line
-hardstatus string '%{= Kd} %{= Kd}%-w%{= Kr}[%{= KW}%n %t%{= Kr}]%{= Kd}%+w %-= %{KG} %H%{KW}|%D %M %d %Y%{= Kc} %C%A%{-}'
+hardstatus string '%{= kd} %{= kd}%-w%{= kR}[ %{= kW}%n %t%{= kR} ]%{= kd}%+w %-= %{kY} %H%{kw} | %D %M %d %Y | %{= kc}%C%A%{-}'
 
 # change command character from ctrl-a to ctrl-b (emacs users may want this)
 #escape ^Bb
