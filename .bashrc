@@ -1,15 +1,19 @@
 # .bashrc
 
-# User specific aliases and functions
+# Alias definitions.
+# You may want to put all your additions into a separate file like
+# ~/.bash_aliases, instead of adding them here directly.
+# See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
-alias rm='rm -i'
-alias cp='cp -i'
-alias mv='mv -i'
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
 
-alias grok='man'
-alias dcl='docker-compose logs'
-alias dcu='docker-compose up'
-alias dcud='docker-compose up -d'
-alias dce='docker-compose exec'
-alias dcd='docker-compose down'
-alias dcp='docker-compose pull'
+# Function definitions.
+# You may want to put all your additions into a separate file like
+# ~/.bash_functions, instead of adding them here directly.
+# See /usr/share/doc/bash-doc/examples in the bash-doc package.
+
+if [ -f ~/.bash_functions ]; then
+    . ~/.bash_functions
+fi
