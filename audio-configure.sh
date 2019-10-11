@@ -11,7 +11,7 @@ fi
 jack_control status
 
 ## set to use alsa
-jack_control ds alsas
+jack_control ds alsa
 ## set for the Schiit device
 jack_control dps device hw:S3
 ## set the AT2020 USB mic
@@ -23,7 +23,7 @@ jack_control dps nperiods 3
 
 jack_control dps period 128
 jack_control dps capture hw:USB
-jack_control dps playback hw:0
+jack_control dps playback hw:S3
 jack_control eps realtime true
 jack_control start
 
