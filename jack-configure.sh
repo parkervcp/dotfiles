@@ -9,7 +9,7 @@ if aplay -l | grep -q USB; then
     output_dev=$(aplay -l | grep -m 1 USB | awk '{ print $3 }')
 else
     echo -e "No usb playback devices found. Defaulting to Generic"
-    output_dev=$(aplay -l | grep -i -m 1 generic | grep -o -P '(?<=\[).*(?=\],)')
+    output_dev=$(aplay -l | grep -i -m 1 generic | awk '{ print $3 }')
 fi
 
 ## get recording devices
@@ -20,7 +20,7 @@ if arecord -l | grep -q USB; then
     input_dev=$(arecord -l | grep -m 1 USB | awk '{ print $3 }')
 else
     echo -e "No usb recording devices found. Defaulting to Generic"
-    input_dev=$(arecord -l | grep -i -m 1 generic | grep -o -P '(?<=\[).*(?=\],)')
+    input_dev=$(arecord -l | grep -i -m 1 generic | awk '{ print $3 }')
 fi
 
 function restart_pulse {
