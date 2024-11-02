@@ -1,6 +1,8 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:/home/parker/.cargo/bin:$PATH
 
+export GPG_TTY=$(tty)
+
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -70,7 +72,7 @@ ZSH_THEME="clean"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(dotenv git history rust sudo safe-paste tmux universalarchive vault)
+plugins=(dotenv git history rust sudo safe-paste tmux universalarchive)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -102,3 +104,6 @@ source $ZSH/oh-my-zsh.sh
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+
+# Created by `pipx` on 2024-07-18 03:19:34
+export PATH="$PATH:/home/parker/.local/bin"
