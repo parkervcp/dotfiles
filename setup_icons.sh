@@ -18,9 +18,6 @@ if [ "$1" != "-i" ]; then
   INVERSE=0;
 fi
 
-git clone https://github.com/Remix-Design/RemixIcon.git
-git clone https://github.com/simple-icons/simple-icons.git
-
 cd ${BASEFOLDER}/RemixIcon/icons
 convert_images
 
