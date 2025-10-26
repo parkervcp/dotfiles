@@ -1,0 +1,6 @@
+[submodule "aesthetic-wallpapers"]
+	path = aesthetic-wallpapers
+	url = https://github.com/D3Ext/aesthetic-wallpapers.git
+[submodule "awesome-wallpapers"]
+	path = awesome-wallpapers
+	url = https://github.com/dpejoh/awesome-wallpapers.git
